@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d24">
+  <title>Un universo para ti ✨</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="estrellas" id="estrellas" aria-hidden="true"></div>
+
+  <main>
+    <section class="pantalla inicio" id="inicio">
+      <div class="brillo">✦</div>
+      <p class="subtitulo">HAY ALGO QUE QUIERO MOSTRARTE</p>
+      <h1>Un universo de<br><span>razones para quererte</span></h1>
+      <p class="descripcion">
+        Entre tantas estrellas, hay una persona que hace
+        que todo tenga un brillo diferente.
+      </p>
+
+      <form id="formulario">
+        <label for="nombre">Antes de entrar, escribe aqui tu nombre ...</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+          autocomplete="given-name"
+          required
+        >
+        <button type="submit" class="boton principal">
+          Entrar a nuestro universo <span>✧</span>
+        </button>
+        <p class="nota">Un pequeño lugar preparado con cariño. ♡</p>
+        <p id="error" class="error" role="alert" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="pantalla universo oculto" id="universo">
+      <p class="subtitulo">ESTO ES PARA TI</p>
+      <h1 id="saludo">Para ti, Enrique ✨</h1>
+      <p class="descripcion">
+        Cada estrella guarda una razón. Toca las que quieras
+        en ellas encontras algunas de las razones de lo que siento por ti.
+      </p>
+
+      <div class="progreso-contenedor">
+        <div class="progreso-texto">
+          <span>Razones descubiertas</span>
+          <span id="contador">0 de 8</span>
+        </div>
+        <div class="barra">
+          <div id="progreso"></div>
+        </div>
+      </div>
+
+      <div class="constelacion" id="constelacion">
+        <button class="estrella-razon" data-indice="0">
+          <span>✦</span><small>01</small>
+        </button>
+        <button class="estrella-razon" data-indice="1">
+          <span>✧</span><small>02</small>
+        </button>
+        <button class="estrella-razon" data-indice="2">
+          <span>✦</span><small>03</small>
+        </button>
+        <button class="estrella-razon" data-indice="3">
+          <span>✧</span><small>04</small>
+        </button>
+        <button class="estrella-razon" data-indice="4">
+          <span>✦</span><small>05</small>
+        </button>
+        <button class="estrella-razon" data-indice="5">
+          <span>✧</span><small>06</small>
+        </button>
+        <button class="estrella-razon" data-indice="6">
+          <span>✦</span><small>07</small>
+        </button>
+        <button class="estrella-razon" data-indice="7">
+          <span>✧</span><small>08</small>
+        </button>
+      </div>
+
+      <p class="instruccion">✧ Cada estrella es una pequeña razón ✧</p>
+
+      <section class="mensaje oculto" id="mensaje" aria-live="polite">
+        <button class="cerrar" id="cerrarMensaje" aria-label="Cerrar mensaje">×</button>
+        <p class="numero-mensaje" id="numeroMensaje">RAZÓN 01</p>
+        <h2 id="tituloMensaje">Una razón para quererte</h2>
+        <p id="textoMensaje"></p>
+      </section>
+
+      <section class="final oculto" id="final">
+        <div class="brillo">♡</div>
+        <p class="subtitulo">GRACIAS POR TODO !!</p>
+        <h2>........</h2>
+        <p>
+          Solo es una  pequeña parte de todo lo
+          que siento por ti, es una de las maneras en que puedo expresarte el cariño que te tengo. Gracias por existir y por formar
+          parte de mi vida.
+        </p>
+        <p class="firma">Con mucho cariño, para ti BONITO. ♡</p>
+        <button class="boton secundario" id="volver">
+          Volver a recorrer el universo ✧
+        </button>
+      </section>
+    </section>
+  </main>
+
+  <footer>Hecho con mucho cariño ✦</footer>
+</body>
+</html>
